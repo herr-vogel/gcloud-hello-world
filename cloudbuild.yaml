@@ -9,7 +9,7 @@ steps:
   - set
   - image
   - deployment
-  - hello-world
+  - gcloud-hello-world-deployment
   - web=gcr.io/$PROJECT_ID/hello-world:$BUILD_ID
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
