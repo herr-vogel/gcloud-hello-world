@@ -15,8 +15,7 @@ spec:
         app: gcloud-hello-world
     spec:
       containers:
-      - name: gcloud-hello-world
-        image: gcr.io/YOUR_PROJECT_NAME_HERE/gcloud-
-        hello-world:latest
+      - name: web
+        image: gcr.io/camundatest-223313/gcloud-hello-world:latest
         ports:
         - containerPort: 80
