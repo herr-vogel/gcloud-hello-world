@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web
-        image: gcr.io/camundatest-223313/gcloud-hello-world:latest
+        image: IMAGE_NAME
         ports:
         - containerPort: 80
