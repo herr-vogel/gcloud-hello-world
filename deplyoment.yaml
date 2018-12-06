@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gcloud-hello-world-deployment
+  labels:
+    app: gcloud-hello-world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gcloud-hello-world
+  template:
+    metadata:
+      labels:
+        app: gcloud-hello-world
+    spec:
+      containers:
+      - name: gcloud-hello-world
+        image: gcr.io/YOUR_PROJECT_NAME_HERE/gcloud-
+        hello-world:latest
+        ports:
+        - containerPort: 80
